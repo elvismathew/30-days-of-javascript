@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Implicit type conversion</title>
+        <script>
+            //"number" + null -> "numbernull"
+            //"number" + boolean -> "numberboolean"
+            //"number" + number -> "numbernumber"
+            //"number"+ undefined -> "numberundefined"
+
+            var  a = "10";
+            document.write(a+null)
+            document.write("<br>");
+
+            document.write(a+false);
+            document.write("<br>");
+
+            document.write(a+20)
+            document.write("<br>");
+            
+            document.write(a+undefined)
+            document.write("<br>");
+
+            //checking the datatype of the answers
+            var res = a + undefined
+            document.write(typeof(res))
+            document.write("<br>");
+
+            //case 2:
+            //"number" - number -> number - number
+            //"number" * number -> number * number
+            //"number" / number -> number / number
+
+            document.write("49" - 15)
+            document.write("<br>");
+            document.write("3" * 2)
+            document.write("<br>");
+            document.write("4"/2)
+            document.write("<br>");
+
+            //case 3;
+            document.write("elvis" - "maganga");
+            document.write("<br>");
+            document.write("43" - "elvis")
+        </script>
+    </head>
+    <body></body>
+</html>
