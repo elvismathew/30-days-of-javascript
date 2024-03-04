@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Function problem one</title>
+        <script>
+            /* write a program in JS to get two numbers
+            from user to pass function to perform arithmetic
+            operation to that number
+            */
+
+            function add(a,b){
+                var a = Number(window.prompt("Enter first number"))
+                var b = Number(window.prompt("Enter the second number"))
+
+                var c = a + b;
+
+                var d = a - b;
+
+                var e = a * b
+
+                var f = a/b
+                document.write(c);
+                document.write("<br/>")
+                document.write("substraction = ", d)
+                document.write("<br/>")
+                document.write("multiplication = ", e)
+                document.write("<br/>")
+                document.write("division = ", f)
+            }
+
+            add();
+        </script>
+    </head>
+    <body></body>
+</html>
