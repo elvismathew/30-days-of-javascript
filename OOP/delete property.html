@@ -1,0 +1,20 @@
+<html>
+    <heaad>
+        <title></title>
+    </heaad>
+    <body>
+        <h1>Deleting properties</h1>
+        <p id="identity"></p>
+        <script>
+            const person = {
+                firstName : "Peter",
+                lastName : "Mupa",
+                age : 23
+            }
+
+            delete person ["age"]
+
+            document.getElementById("identity").innerHTML = person.age;
+        </script>
+    </body>
+</html>

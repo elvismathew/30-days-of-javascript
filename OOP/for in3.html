@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>For in loop JavaScript</h1>
+        <p id="auto"></p>
+
+        <script>
+            const vehicle = {
+                model : "Ford",
+                year : 2023,
+                color : "Red",
+                wheels : 4
+            };
+
+            let car = "";
+            for(let x in vehicle){
+                car += vehicle[x] + " ";
+            }
+
+            document.getElementById("auto").innerHTML = car;
+
+        </script>
+    </body>
+</html>

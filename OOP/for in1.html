@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>For in loop in JavaScript</h1>
+        <p id="demo"></p>
+        <script>
+            const courses = {
+                firstCourse : "React",
+                secondCourse : "Angular",
+                thirdCourse : "Vue"
+            }
+
+            let item = "";
+            for (let x in courses){
+                item += courses[x] + "";
+            }
+
+            document.getElementById("demo").innerHTML = item;
+        </script>
+    </body>
+</html>

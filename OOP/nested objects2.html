@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Nested properties in JavaScript</h1>
+        <p id="property"></p>
+        <script>
+            Asset = {
+                car : "model",
+                houses : "Bungalow",
+                location :{
+                    location1 : "Kinyerezi",
+                    location2 : "Upanga",
+                    location3 : "pugu"
+                }
+            };
+
+            document.getElementById("property").innerHTML = Asset.location.location2
+        </script>
+    </body>
+</html>

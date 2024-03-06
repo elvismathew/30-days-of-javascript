@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Nested Objects</h1>
+        <p id="demo"></p>
+
+        <script>
+            const myobj = {
+                name: "John",
+                age : 30,
+                cars : {
+                    car1 : "Ford",
+                    car2 : "BMW",
+                    car3 : "Fiat"
+                }
+            };
+
+            document.getElementById("demo").innerHTML = myobj.cars.car1;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="fridge"></p>
+        <script>
+            const kitchen ={
+                heat : "gas",
+                water : "dawasco",
+                electricity : "tanesco",
+                years : 5
+            };
+
+            delete kitchen.electricity;
+            //delete kitchen.years
+
+            document.getElementById("fridge").innerHTML = kitchen.electricity;
+        </script>
+    </body>
+</html>

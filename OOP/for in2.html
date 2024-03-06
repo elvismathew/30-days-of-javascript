@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>For in loop in JavaScript</h1>
+        <p id="auto"></p>
+
+        <script>
+            const student = {
+            firstName : "Elvis",
+            secondName : "Maganga",
+            age : 20,
+            level : "university"
+        }
+
+        let person = " ";
+        for (let x in student){
+            person += student[x] + " ";
+        }
+
+        document.getElementById("auto").innerHTML = person;
+        </script>
+    </body>
+</html>
