@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>This keyword in a function</h1>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                return this;
+            }
+
+            document.getElementById("demo").innerHTML = myFunction();
+        </script>
+    </body>
+</html>

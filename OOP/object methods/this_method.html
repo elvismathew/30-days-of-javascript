@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>This keyword in a method</h1>
+        <p id="demo"></p>
+        <script>
+            const person = {
+                firstName : "John",
+                lastName : "Doe",
+                id : 556,
+                fullName : function(){
+                    return this.firstName + " " + this.lastName;
+                }
+                
+            };
+
+            document.getElementById("demo").innerHTML = person.fullName();
+        </script>
+    </body>
+</html>
