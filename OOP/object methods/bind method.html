@@ -4,25 +4,24 @@
     </head>
     <body>
         <p id="demo"></p>
-
         <script>
-            //create an object
-
             const person = {
                 firstName : "John",
                 lastName : "Doe",
-                id : 5566,
-                myFunction : function (){
-                    return this;
-                },
-
                 fullName : function (){
-                    return this.firstName + " " + this.lastName;
+                    return this.firstName + " " + this.lastName
                 }
             };
 
-            document.getElementById("demo").innerHTML = person.fullName();
 
+            const member = {
+                firstName : "Elvis",
+                lastName : "Macdee"
+            }
+
+            let fullName = person.fullName.bind(member);
+
+            document.getElementById("demo").innerHTML = fullName()
         </script>
     </body>
 </html>

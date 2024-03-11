@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const car = {
+                fullDetails : function(year, ID){
+                    return this.name + " " + this.model + " " + year + " " + ID
+                }
+            };
+            
+            const car1 = {
+                name : "ford",
+                model : "SUV"
+            };
+
+            const car2 = {
+                name : "mercedes",
+                model : "saloon"
+            }
+
+
+            document.getElementById("demo").innerHTML = car.fullDetails.apply(car2, [2003, 3444])
+        </script>
+    </body>
+</html>

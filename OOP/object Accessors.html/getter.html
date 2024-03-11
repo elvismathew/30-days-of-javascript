@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            name : "John",
+            age : 53,
+            language : "en",
+            get lang(){
+                return this.language;
+            }
+        };
+
+        document.getElementById("demo").innerHTML = person.lang;
+    </script>
+</body>

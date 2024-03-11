@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            const car = {
+                fullDetails : function(){
+                    return this.name +" " +this.model
+                }
+            };
+
+            const car1 = {
+                name : "ford",
+                model : "SUV"
+            };
+
+            const car2 = {
+                name : "mercedes",
+                model : "saloon"
+            }
+
+            document.getElementById("demo").innerHTML = car.fullDetails.apply(car1);
+        </script>
+    </body>
+</html>
