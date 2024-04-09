@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>Third way of copying values of one element to another element</p>
+    
+    <h1 id="id01"> My first Page!!</h1>
+    <p id="id02">Hello</p>
+
+    <script>
+        document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;
+    </script>
+</body>
+</html>
