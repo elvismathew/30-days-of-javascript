@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript HTML DOM</h2>
+    <p>Add a new HTML element</p>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph</p>
+
+        <script>
+            const para = document.createElement("p");
+            const node = document.createTextNode("This is new")
+            para.appendChild(node);
+
+            const element = document.getElementById("div1");
+            const child = document.getElementById("p1");
+            element.insertBefore(para,child);
+        </script>
+    </div>
+</body>
+</html>
